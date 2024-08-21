@@ -176,6 +176,25 @@
   }
 }
 
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 1440px) and (min-width: 1140px) {
+  .svg-invite {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
 h1 {
   color: #161517;
   font-family: "Sora", sans-serif;
@@ -1464,5 +1483,33 @@ header {
     stroke-width: 4;
     stroke-dasharray: 400 0;
     stroke-opacity: 1;
+  }
+}
+.fignu5-ball1 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 0s infinite alternate-reverse;
+}
+
+.fignu5-ball2 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 2s infinite alternate-reverse;
+}
+
+.fignu5-ball3 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 3s infinite alternate-reverse;
+}
+
+.fignu5-ball4 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 1s infinite alternate-reverse;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate(200px, -100px);
   }
 }/*# sourceMappingURL=style.css.map */

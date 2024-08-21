@@ -382,3 +382,33 @@ $height-card: 0.64 * $width-card;
   }
 
 }
+
+.fignu5-ball1 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 0s infinite alternate-reverse;
+}
+
+.fignu5-ball2 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 2s infinite alternate-reverse;
+}
+
+.fignu5-ball3 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 3s infinite alternate-reverse;
+}
+
+.fignu5-ball4 {
+  transform: translate(200px, -100px);
+  animation: translate-ball 4s ease 1s infinite alternate-reverse;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate(200px, -100px);
+  }
+}
