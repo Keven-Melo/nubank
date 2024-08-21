@@ -169,4 +169,21 @@ h5 {
     font-weight: bold;
     color: #353436;
   }
+
+  strong {
+    color: $black-dark;
+    @include typeface-2(p2, desktop);
+  
+    @include responsive(s) {
+      @include typeface-2(p2, mobile);
+    }
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .weight-light {
+    font-weight: 300;
+  }
   
